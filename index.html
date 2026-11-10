@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000067" />
+    <title>SDSA Launcher</title>
+    <link rel="icon" href="brand-package/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="brand-package/favicon/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="brand-package/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="brand-package/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="brand-package/colors/palette.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#agents">Skip to the agents</a>
+
+    <header class="nav" id="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="./" aria-label="SDSA Launcher home">
+          <img class="logo-light" src="brand-package/site/sdsa-launcher_white-wordmark.svg" alt="" />
+          <img class="logo-dark" src="brand-package/site/sdsa-launcher_primary-wordmark.svg" alt="" />
+          <span class="cursor" aria-hidden="true"></span>
+        </a>
+        <nav class="nav-links" aria-label="Page">
+          <a href="#continue">Continue</a>
+          <a href="#agents">Agents</a>
+          <a href="#trust">Governance</a>
+        </nav>
+        <div class="nav-right">
+          <button type="button" class="palette-btn" id="open-palette">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6" />
+              <path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+            <span>Find an agent</span>
+            <kbd>⌘K</kbd>
+          </button>
+          <span class="avatar" title="Signed in as Venkata">V</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="glow glow-a"></div>
+        <div class="glow glow-b"></div>
+        <div class="grid-lines"></div>
+      </div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">
+            <span class="pulse" aria-hidden="true"></span>
+            <span id="eyebrow-text"></span>
+          </p>
+          <h1 id="hero-title" class="reveal">
+            <span class="nowrap">Every Standards agent.</span>
+            <span class="line-2">One launcher</span>
+          </h1>
+          <p class="sub reveal">
+            Ask SpecIQ Assistant. genTDM and genCode are future releases, so
+            they stay on the page until they open.
+          </p>
+
+          <form id="ask-form" class="ask reveal" role="search">
+            <label class="sr" for="ask-input">Describe the task</label>
+            <input id="ask-input" type="search" autocomplete="off" placeholder="Describe the task" />
+            <button type="submit" class="ask-go" aria-label="Match an agent">
+              <span>Match</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+          <div id="chips" class="chips reveal"></div>
+          <div id="match" class="match-slot" aria-live="polite"></div>
+        </div>
+
+        <div class="hero-media reveal" aria-label="Launcher preview">
+          <div class="media-frame">
+            <video
+              id="hero-video"
+              class="hero-video"
+              muted
+              loop
+              playsinline
+              autoplay
+              preload="auto"
+              hidden
+            >
+              <source src="assets/hero.mp4?v=4" type="video/mp4" />
+            </video>
+
+            <div id="console" class="console">
+              <div class="console-head">
+                <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="console-title">On this launcher</span>
+              </div>
+              <ul class="console-list">
+                <li class="c-confirm">
+                  <span class="tile alt">SA</span>
+                  <div class="c-copy">
+                    <strong>SpecIQ Assistant</strong>
+                    <span>Answers from the CaPS SharePoint site</span>
+                  </div>
+                  <span class="c-btn">Open</span>
+                </li>
+                <li>
+                  <span class="tile">GT</span>
+                  <div class="c-copy">
+                    <strong>genTDM</strong>
+                    <span>Trial design model from the protocol</span>
+                  </div>
+                  <span class="c-state future">Future</span>
+                </li>
+                <li>
+                  <span class="tile">GC</span>
+                  <div class="c-copy">
+                    <strong>genCode</strong>
+                    <span>SDTM programs from the mapping spec</span>
+                  </div>
+                  <span class="c-state future">Future</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="continue" class="continue wrap" aria-labelledby="continue-title">
+        <div class="continue-head">
+          <h2 id="continue-title">Continue where you left off</h2>
+          <a href="#agents" class="text-link">All agents</a>
+        </div>
+        <div id="continue-list" class="continue-grid"></div>
+      </section>
+
+      <section id="agents" class="agents wrap" aria-labelledby="agents-title">
+        <div class="section-head reveal">
+          <p class="kicker">The catalog</p>
+          <h2 id="agents-title">Start with these agents</h2>
+          <p id="agents-note" class="section-sub"></p>
+        </div>
+
+        <div class="stage-bar reveal" hidden>
+          <div id="stages" class="stages" role="tablist" aria-label="Study stage"></div>
+          <label class="switch">
+            <input id="beta" type="checkbox" />
+            <span class="track" aria-hidden="true"></span>
+            <span>Include beta</span>
+          </label>
+        </div>
+
+        <div id="agent-grid" class="agent-grid"></div>
+      </section>
+
+      <section id="trust" class="trust" aria-labelledby="trust-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="kicker">Built for regulated work</p>
+            <h2 id="trust-title">Clear before every click</h2>
+          </div>
+          <div class="trust-grid">
+            <article class="trust-card reveal">
+              <span class="t-num">01</span>
+              <h3>Status before you open</h3>
+              <p>Version and owner sit next to Open, so you know which build you are launching.</p>
+            </article>
+            <article class="trust-card reveal">
+              <span class="t-num">02</span>
+              <h3>Confirm before launch</h3>
+              <p>The prompt proposes one agent. You check its intended use before it runs.</p>
+            </article>
+            <article class="trust-card reveal">
+              <span class="t-num">03</span>
+              <h3>The agents on this page</h3>
+              <p>SpecIQ Assistant is open now. genTDM and genCode stay on the page as future releases.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot-inner">
+        <span class="brand foot-brand" role="img" aria-label="sdsa launcher"><img class="logo-light" src="brand-package/site/sdsa-launcher_white-wordmark.svg" alt="" /><span class="cursor" aria-hidden="true"></span></span>
+        <nav id="foot-nav" class="foot-nav" aria-label="Governance"></nav>
+      </div>
+      <div class="wrap">
+        <p id="foot-note" class="foot-note" hidden></p>
+      </div>
+    </footer>
+
+    <dialog id="sheet" class="sheet">
+      <form method="dialog">
+        <div class="sheet-top">
+          <span id="sheet-tile" class="tile lg"></span>
+          <div>
+            <p id="sheet-kicker" class="sheet-kicker"></p>
+            <h3 id="sheet-title"></h3>
+          </div>
+        </div>
+        <p id="sheet-body" class="sheet-body"></p>
+        <dl id="sheet-facts" class="facts"></dl>
+        <div class="sheet-actions">
+          <button type="submit" class="btn ghost" value="cancel">Cancel</button>
+          <button type="submit" class="btn primary" id="sheet-confirm" value="confirm">Open</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="palette" class="palette" aria-label="Find an agent">
+      <div class="palette-search">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6" />
+          <path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+        <input id="palette-input" type="text" placeholder="Search agents by name or task" autocomplete="off" aria-label="Search agents" />
+        <kbd>esc</kbd>
+      </div>
+      <ul id="palette-list" class="palette-list" role="listbox"></ul>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

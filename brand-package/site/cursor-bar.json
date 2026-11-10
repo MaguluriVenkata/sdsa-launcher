@@ -1,0 +1,20 @@
+{
+  "primary": {
+    "ratio": 8.3212,
+    "bar": {
+      "left": 92.79,
+      "top": 89.375,
+      "width": 7.21,
+      "height": 10.625
+    }
+  },
+  "white": {
+    "ratio": 8.3212,
+    "bar": {
+      "left": 92.79,
+      "top": 89.375,
+      "width": 7.21,
+      "height": 10.625
+    }
+  }
+}

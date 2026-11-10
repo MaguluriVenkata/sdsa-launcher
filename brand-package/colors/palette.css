@@ -1,0 +1,6 @@
+:root{
+  --sdsa-blue-70:#0000C9;  /* name, cursor bar, reversed backgrounds */
+  --sdsa-blue-90:#000067;  /* descriptor, dark backgrounds */
+  --sdsa-blue-10:#E8F2FF;  /* light background only, never text */
+  --sdsa-white:#FFFFFF;
+}

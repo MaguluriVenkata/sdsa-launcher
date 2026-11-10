@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "metadata": {
+    "appmode": "static",
+    "primary_html": "index.html",
+    "entrypoint": "index.html",
+    "content_category": "site"
+  },
+  "files": {
+    "app.js": {
+      "checksum": "b28083259ab13462f8410c119b162029"
+    },
+    "assets/hero.mp4": {
+      "checksum": "7d926f5f227029ec66495e70bc3bcd33"
+    },
+    "brand-package/colors/palette.css": {
+      "checksum": "2c1edd8a92d8695b8b7b06d27c06e0ac"
+    },
+    "brand-package/colors/palette.json": {
+      "checksum": "4bc782d34113dd778906e82626eabec2"
+    },
+    "brand-package/favicon/android-chrome-192.png": {
+      "checksum": "8aa2202b53aba6ebaf49c4ba1b096827"
+    },
+    "brand-package/favicon/android-chrome-512.png": {
+      "checksum": "45d86e6ef5901364c77dc6d1a1010a95"
+    },
+    "brand-package/favicon/apple-touch-icon.png": {
+      "checksum": "5e99f6645fd1e17f2c950f57966b021e"
+    },
+    "brand-package/favicon/favicon-16.png": {
+      "checksum": "414df8fb407bcc47b41662b036eb0177"
+    },
+    "brand-package/favicon/favicon-32.png": {
+      "checksum": "06624cf8a9e7923ca755aeb5691b140b"
+    },
+    "brand-package/favicon/favicon-48.png": {
+      "checksum": "117f23522c65a0c152659ad43e4a525e"
+    },
+    "brand-package/favicon/favicon.ico": {
+      "checksum": "cd3b7551d953e5dcc0d1318116462a47"
+    },
+    "brand-package/favicon/favicon.svg": {
+      "checksum": "b9d00e9979f40374cf4bb01f6304f673"
+    },
+    "brand-package/favicon/site.webmanifest": {
+      "checksum": "833134cb4bc9e44dd497e78614c20680"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_black_1024.png": {
+      "checksum": "5999c7b8e46109b9182b372ce591e940"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_black_128.png": {
+      "checksum": "08b6060ace60249fd3de3525f41883ad"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_black_256.png": {
+      "checksum": "5c28b5629fcb68681f0c200bc38d9fa9"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_black_512.png": {
+      "checksum": "65ec91e132995cf6f44b22154c2778e2"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_blue-70_1024.png": {
+      "checksum": "088f4a2c5cdb4a0f03a75225d2c46a4f"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_blue-70_128.png": {
+      "checksum": "28b3b563232ee18aedab4a53e69a6309"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_blue-70_256.png": {
+      "checksum": "94e08836d8ca6a3d232f25b4615016d0"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_blue-70_512.png": {
+      "checksum": "45d86e6ef5901364c77dc6d1a1010a95"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_blue-90_1024.png": {
+      "checksum": "6a70bc4ea5c74a14d94d35ed56deb74b"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_blue-90_128.png": {
+      "checksum": "420a39bbcae28642cea7b1e2341dbeaf"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_blue-90_256.png": {
+      "checksum": "cbf035d8a07590f07aea5cd0d0e3e314"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_blue-90_512.png": {
+      "checksum": "6f9dd0ad7f67954e383cf607006f4ef1"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_outline_1024.png": {
+      "checksum": "6409e346cfc0b2e032070c4d640972ce"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_outline_128.png": {
+      "checksum": "32f7948d3b8f4d2da772dc861ac20f4a"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_outline_256.png": {
+      "checksum": "2e7c5a914481b7e56596e859ba6a3bfb"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_outline_512.png": {
+      "checksum": "125b2e73de591b822cb098c78b3d7fd4"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_pale-blue_1024.png": {
+      "checksum": "9002ef2d917077756924501903c0c0fb"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_pale-blue_128.png": {
+      "checksum": "292b06e9389316266850ebf5781116c9"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_pale-blue_256.png": {
+      "checksum": "ba2f7e99ca9de8a613712e1798461b2a"
+    },
+    "brand-package/icon/png/sdsa-launcher_icon_pale-blue_512.png": {
+      "checksum": "a1f449dc9ead824131918e3f99cf349a"
+    },
+    "brand-package/icon/svg/sdsa-launcher_icon_black.svg": {
+      "checksum": "b1ccbed904ef6736622884493f8550f6"
+    },
+    "brand-package/icon/svg/sdsa-launcher_icon_blue-70.svg": {
+      "checksum": "94a2a64302c60889da92e4648b9aec5f"
+    },
+    "brand-package/icon/svg/sdsa-launcher_icon_blue-90.svg": {
+      "checksum": "0b7b7dd64703c1abcb902a2f631653ac"
+    },
+    "brand-package/icon/svg/sdsa-launcher_icon_outline.svg": {
+      "checksum": "ce88bc00e55a66a64a0dfc640063a8d8"
+    },
+    "brand-package/icon/svg/sdsa-launcher_icon_pale-blue.svg": {
+      "checksum": "063050b4fd6e0db0ace0d7408b55894e"
+    },
+    "brand-package/logo/png/sdsa-launcher_one-color-black_1200w.png": {
+      "checksum": "9b8bb038dbbe7ad2e93d47a80e7344df"
+    },
+    "brand-package/logo/png/sdsa-launcher_one-color-black_2400w.png": {
+      "checksum": "e7d97175e161b37596a7250c640b2b63"
+    },
+    "brand-package/logo/png/sdsa-launcher_one-color-black_600w.png": {
+      "checksum": "34f20c43a4f3026fe0c7b0b224d02721"
+    },
+    "brand-package/logo/png/sdsa-launcher_one-color-white_1200w.png": {
+      "checksum": "c7428414bbf573c106c837131425f599"
+    },
+    "brand-package/logo/png/sdsa-launcher_one-color-white_2400w.png": {
+      "checksum": "71ad9ce9f197666e153c20a2bc1037ab"
+    },
+    "brand-package/logo/png/sdsa-launcher_one-color-white_600w.png": {
+      "checksum": "6659815dfc230ee634859535cca1116b"
+    },
+    "brand-package/logo/png/sdsa-launcher_primary-on-pale-blue_1200w.png": {
+      "checksum": "61a715295554e12748279d5c73498ce5"
+    },
+    "brand-package/logo/png/sdsa-launcher_primary-on-pale-blue_2400w.png": {
+      "checksum": "33cebea5507305dc6ecbca37eb9fb8a0"
+    },
+    "brand-package/logo/png/sdsa-launcher_primary-on-pale-blue_600w.png": {
+      "checksum": "a9eeb6d6fd4691dceb4fac00055586ed"
+    },
+    "brand-package/logo/png/sdsa-launcher_primary_1200w.png": {
+      "checksum": "f1a1ef280d510e4e53cdd1d497188051"
+    },
+    "brand-package/logo/png/sdsa-launcher_primary_2400w.png": {
+      "checksum": "a89ba04c87e3ebca0def4b8189b62957"
+    },
+    "brand-package/logo/png/sdsa-launcher_primary_600w.png": {
+      "checksum": "3cea15e01ac2ee292b3639e1a7972b32"
+    },
+    "brand-package/logo/png/sdsa-launcher_white-on-blue-70_1200w.png": {
+      "checksum": "c86f5be6b24956f019682a822c389814"
+    },
+    "brand-package/logo/png/sdsa-launcher_white-on-blue-70_2400w.png": {
+      "checksum": "bc4d71f9a1ee51bb818ffe68002b6de6"
+    },
+    "brand-package/logo/png/sdsa-launcher_white-on-blue-70_600w.png": {
+      "checksum": "7444a192db1b8c676ea2babbdd9c10df"
+    },
+    "brand-package/logo/png/sdsa-launcher_white-on-blue-90_1200w.png": {
+      "checksum": "28945330d01d6069f8361f94f27ed4bc"
+    },
+    "brand-package/logo/png/sdsa-launcher_white-on-blue-90_2400w.png": {
+      "checksum": "d33c0c5cf55faaad93db7d0172c1e521"
+    },
+    "brand-package/logo/png/sdsa-launcher_white-on-blue-90_600w.png": {
+      "checksum": "65de802620e5be3b47985cc7e32d5909"
+    },
+    "brand-package/logo/svg/sdsa-launcher_one-color-black.svg": {
+      "checksum": "7c92b4f699a5ee1a784e58f51b5029dd"
+    },
+    "brand-package/logo/svg/sdsa-launcher_one-color-white.svg": {
+      "checksum": "8c1da77a9975bfe9cc40542e704a93c3"
+    },
+    "brand-package/logo/svg/sdsa-launcher_primary-on-pale-blue.svg": {
+      "checksum": "caa33ce872080612b5f9e696b856d5f7"
+    },
+    "brand-package/logo/svg/sdsa-launcher_primary.svg": {
+      "checksum": "715bba9ca1dd3c179a9f7474631154f5"
+    },
+    "brand-package/logo/svg/sdsa-launcher_white-on-blue-70.svg": {
+      "checksum": "5ef3448fec2b5656446aab2d7fe5e11c"
+    },
+    "brand-package/logo/svg/sdsa-launcher_white-on-blue-90.svg": {
+      "checksum": "1fde7fde24fec0ec75ba633e721dbf75"
+    },
+    "brand-package/site/cursor-bar.json": {
+      "checksum": "1dd9400fc162e6ba966b314f6297284d"
+    },
+    "brand-package/site/sdsa-launcher_primary-wordmark.svg": {
+      "checksum": "24e712a1d3bb4a76bfe84241fec1edfb"
+    },
+    "brand-package/site/sdsa-launcher_white-wordmark.svg": {
+      "checksum": "3a7b380bc0415feb2f3bd929f429de0d"
+    },
+    "brand-package/social/avatar_400.png": {
+      "checksum": "357d0af21764b92273f5b0954699552a"
+    },
+    "brand-package/social/og-image_dark.png": {
+      "checksum": "81a7b712dc1134bd0c343cc73055928b"
+    },
+    "brand-package/social/og-image_light.png": {
+      "checksum": "6e604c4e42deb6aca3b7941b4a421be7"
+    },
+    "index.html": {
+      "checksum": "ba81c814acc2a600aea00d233403b3e1"
+    },
+    "styles.css": {
+      "checksum": "2c614c41eca9474c9a52c4eba23dce65"
+    }
+  }
+}

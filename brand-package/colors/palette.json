@@ -1,0 +1,6 @@
+{
+  "blue-70": {"hex": "#0000C9", "rgb": [0, 0, 201],   "use": "Name, cursor bar, reversed backgrounds"},
+  "blue-90": {"hex": "#000067", "rgb": [0, 0, 103],   "use": "Descriptor, dark backgrounds"},
+  "blue-10": {"hex": "#E8F2FF", "rgb": [232, 242, 255], "use": "Light background only, never text"},
+  "white":   {"hex": "#FFFFFF", "rgb": [255, 255, 255], "use": "Main background, reversed text"}
+}
